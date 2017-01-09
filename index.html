@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Connor Ericson - A Resume</title>
+	<link rel="stylesheet" type="text/css" href="resume.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">
+	
+	
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div id="intro" class="intro animated fadeIn">
+				<span id="name">Connor Ericson</span>
+				<img class="portrait" src="portrait.jpg">
+				<p class="introp">An aspiring Full-Stack Developer with a background in people.</p>
+			</div>
+		</header>
+		
+		<div class="aboutme animated fadeIn">
+			<p class="sectiontitle aboutmetitle">Who I Am:</p>
+			<p class="aboutmep">Two months ago, I started my journey as a Full-Stack Developer by enrolling in <a href="https://www.thinkful.com">Thinkful</a>'s coding bootcamp. I have acquired the knowledge and skills to be a successful front-end developer utilizing HTML, CSS, and Javascript. I am currently developing my skillset with back-end development. These skills, combined with my experience working in a world class pediatric clinic, makes me an ideal candidate for a web development team.</p>
+		</div>
+
+		<div class="skills">
+			<div id="skills" class="animated">
+				<p class="sectiontitle skillstitle">Skills:</p>
+				<div class="skillsp">	
+					<h3>Programming</h3>
+					<p>Working knowledge of HTML, CSS, Javascript, jQuery derived from my enrollment in a coding bootcamp. I will have gained experience with Node.js, React, and a few other frameworks and languages by the end of my course. Check out a few of my most recent projects below!</p>
+					<br>				
+					<h3>Leadership and Teamwork</h3>
+					<p>Able to work within teams and as a supervisor on detail oriented tasks in a fast-paced healthcare environment. I have provided coaching and training for both coworkers and parents on implementing very complex protocols.</p>
+					<br>
+					<h3>Adaptability and Time-Management</h3>
+					<p>Excels at efficient completion of job duties and projects with large work loads and strict schedules.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="experience animated">
+			<div id="experience" class="animated">
+				<p class="sectiontitle experiencetitle">Qualifications:</p>
+				<a href="https://www.thinkful.com"><img class="thinkful" src="thinkful_logo.png"></a>
+				
+				<p class="thinkfulp"><span class="thinkfultitle ptitle">Coding Bootcamp</span><br>In November of 2015, I started my exciting climb toward becoming a full-stack developer.</p>
+				<a href="https://www.choa.org/"><img class="choa" src="choa.png"></a>
+				<p class="choap"><span class="choatitle ptitle">Behavioral Clinical Specialist</span><br>Right out of college, I got a fantastic position at the Marcus Autism Center, part of Children's Healthcare of Atlanta, working to help kids with feeding disorders to increase their oral intake.</p>
+				<a href="http://www.gsu.edu/"><img class="gsu" src="gsu.png"></a>
+				<p class="gsup"><span class="gsutitle ptitle">B.S. in Psychology</span><br>Graduated in 2013 Magna Cum Laude from Georgia State University.</p>
+			</div>
+		</div>
+
+		
+
+		<div class="showcase animated">
+			<div id="showcase" class="animated">	
+				<p class="sectiontitle projectstitle">Projects:</p>
+				<div class="concertfindertext"><span class="concertfindertitle ptitle">Concert Finder</span><br>My first application using API's was designed for users to input their favorite artist and be given information regarding upcoming concerts. It also provides a map to the concert location!</div>
+				<a href="https://condericson.github.io/concertfinder/"><img class="concertfinder" src="concertfinder.png"></a>
+				<div class="quizapptext"><span class="quizapptitle ptitle">Quiz App</span><br>A application designed to strengthen budding CSS skills while honing HTML frameworking.</div>
+				<a href="https://condericson.github.io/quiz-attempt-2/"><img class="quizapp" src="quizapp.png"></a>
+			</div>
+		</div>
+
+		
+
+		<footer class="contact">
+			<div id="contact" class="animated">
+				<p class="talk">I'd love to chat!</p>
+				<p class="emailaddress">condericson@gmail.com</p>
+				<a href="https://www.linkedin.com/pub/connor-ericson/12b/7b/175"><img class="linkedinlogo" src="linkedin_logo.png" alt="View my LinkedIn profile"></a>
+			</div>
+		</footer>
+
+
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#skills').css('opacity', 0);
+ 
+  $('#skills').waypoint(function() {
+      $('#skills').addClass('fadeInUp');
+  }, { offset: '80%' });
+
+  $('#experience').css('opacity', 0);
+ 
+  $('#experience').waypoint(function() {
+      $('#experience').addClass('fadeInUp');
+  }, { offset: '80%' });
+
+  $('#showcase').css('opacity', 0);
+ 
+  $('#showcase').waypoint(function() {
+      $('#showcase').addClass('fadeInUp');
+  }, { offset: '80%' });
+
+  $('#contact').css('opacity', 0);
+ 
+  $('#contact').waypoint(function() {
+      $('#contact').addClass('fadeInUp');
+  }, { offset: '80%' });
+ 
+});
+	</script>
+</body>
+</html>
